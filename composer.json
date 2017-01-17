@@ -1,0 +1,38 @@
+{
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+
+	"require": {
+		"icanboogie/icanboogie": "^4.0.0",
+		"icanboogie/bind-activerecord": "^4.0",
+		"icanboogie/bind-facets": "^0.7",
+		"icanboogie/bind-render": "^0.6",
+		"icanboogie/bind-view": "^0.9",
+		"icanboogie/bind-cldr": "^2.0",
+		"icanboogie/module": "^4.0",
+		"icanboogie/i18n": "^3.0",
+		"icanboogie/operation": "^4.0",
+		"icybee/patron-render-support": "^0.3",
+		"brickrouge/brickrouge": "^3.0",
+		"brickrouge/listview": "dev-master",
+		"brickrouge/bind-icanboogie-validate": "dev-master",
+		"cebe/markdown": "^1.1.0"
+	},
+
+	"autoload": {
+		"psr-4": {
+			"App\\": "lib",
+			"App\\Modules\\Categories\\": "app/all/modules/categories/lib",
+			"App\\Modules\\Comments\\": "app/all/modules/comments/lib",
+			"App\\Modules\\Posts\\": "app/all/modules/posts/lib",
+			"App\\Modules\\Users\\": "app/all/modules/users/lib"
+		},
+		"classmap": [
+			"app/Application.php"
+		]
+	},
+
+	"scripts": {
+		"post-autoload-dump": "ICanBoogie\\Autoconfig\\Hooks::on_autoload_dump"
+	}
+}

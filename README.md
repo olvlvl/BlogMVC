@@ -1,6 +1,6 @@
 # BlogMVC / ICanBoogie 4.0 version
 
-Greetings! This is a [ICanBoogie](https://icanboogie.org)-based BlogMVC realization.
+Greetings! This is a [ICanBoogie](https://icanboogie.org)-based [BlogMVC](https://github.com/Grafikart/BlogMVC) realization.
 
 
 
